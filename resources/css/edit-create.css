@@ -25,6 +25,17 @@ h1{
     font-family: Arial, sans-serif;
 }
 
+.image-container {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
 nav .navbar{
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -59,7 +70,7 @@ nav .container{
 
 .form-group label {
     font-weight: bold;
-    color: #555;
+    color: #1f1f1f;
     display: block;
     margin-bottom: 8px;
 }
@@ -76,9 +87,36 @@ nav .container{
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #007bff;
+    border-color: #454c52;
     outline: none;
 }
+
+/* edit-create.css */
+.left-box, .right-box {
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Box melayang dengan bayangan tebal */
+.bg-white {
+    border-radius: 25px; /* Sudut tumpul */
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar dan tebal */
+    padding: 20px;
+    background-color: #ffffff; /* Pastikan warna latar belakang putih */
+}
+
+/* Tambahkan efek hover untuk lebih dramatis */
+.bg-white:hover {
+    transform: translateY(-8px); /* Gerakan naik sedikit */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Bayangan lebih intens */
+}
+
+textarea:focus {
+    border-color: #2563eb; /* Fokus warna biru */
+    outline: none;
+}
+
 
 textarea {
     height: 400px; /* Menambah tinggi textarea */
@@ -86,7 +124,7 @@ textarea {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #44c963;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -96,7 +134,9 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #1d642c;
+    transform: translateY(-4px);
+    transition: transform 0.2s ease;
 }
 
 /* Alert Styling */
@@ -117,4 +157,17 @@ button:hover {
 
 .alert ul li {
     margin-left: 20px;
+}
+
+input[type="text"], textarea {
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4A90E2; /* Warna biru ketika fokus */
+}
+
+button:hover {
+    background-color: #1E3A8A; /* Lebih gelap saat hover */
+    transition: background-color 0.3s ease;
 }
